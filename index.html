@@ -1,0 +1,55 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
+        "http://www.w3.org/TR/html4/loose.dtd">
+<html lang="ru-RU">
+<head>
+    <meta charset="utf-8" content="text/html">
+    <title>JS Task</title>
+    <link href="style.css" rel="stylesheet">
+</head>
+<body>
+<div class="header">
+    <div class="header-content">
+        <div>Моя выписка</div>
+        <div class="circle"></div>
+        <div>Николай Полевой</div>
+    </div>
+</div>
+<div class="datasource">
+    <div class="column-checkboxes">
+        <div><input checked id="date-column-checkbox" type="checkbox"/>Дата</div>
+        <div><input checked id="time-column-checkbox" type="checkbox"/>Время</div>
+        <div><input checked id="type-column-checkbox" type="checkbox"/>Тип</div>
+        <div><input checked id="profit-column-checkbox" type="checkbox"/>Приход</div>
+        <div><input checked id="expenses-column-checkbox" type="checkbox"/>Расход</div>
+    </div>
+    <div class="dropdown">
+        Группировка
+        <select id="group-select">
+            <option id="non">Без группировки</option>
+            <option id="date">Группировка по дате</option>
+        </select>
+    </div>
+    <table>
+        <thead>
+        <tr>
+            <th class="date-column">Дата</th>
+            <th class="time-column">Время</th>
+            <th class="type-column">Тип</th>
+            <th class="profit-column">Приход</th>
+            <th class="expenses-column">Расход</th>
+        </tr>
+        </thead>
+        <tbody>
+        </tbody>
+    </table>
+    <div class="datasource-scroll-table">
+        <table>
+            <tbody>
+            </tbody>
+        </table>
+    </div>
+</div>
+<script src='my-statement-data.js' type="text/javascript"></script>
+<script src='dbo-logic-source.js' type="text/javascript"></script>
+</body>
+</html>
